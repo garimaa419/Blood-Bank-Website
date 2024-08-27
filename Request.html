@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Request Blood</title>
+</head>
+<body>
+    <nav>
+        <ul class="container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Donate.html">Donate Blood</a></li>
+            <li><a href="Request.html">Request Blood</a></li>
+            <li><a href="Availability.html">Blood Availability</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="request">
+        <div class="container">
+            <img src="images/request.jpg" alt="Request Blood">
+            <h2>Request Blood</h2>
+            <form id="request-form">
+                <div class="form-group">
+                    <label for="patient-name">Patient Name:</label>
+                    <input type="text" id="patient-name" name="patient-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="patient-email">Patient Email:</label>
+                    <input type="email" id="patient-email" name="patient-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="patient-phone">Patient Phone:</label>
+                    <input type="tel" id="patient-phone" name="patient-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="required-blood-type">Required Blood Type:</label>
+                    <select id="required-blood-type" name="required-blood-type" required>
+                        <option value="" disabled selected>Select the required blood type</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity (Units):</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                </div>
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
